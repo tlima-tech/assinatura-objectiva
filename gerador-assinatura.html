@@ -438,19 +438,19 @@ function buildSignature(v) {
   </tbody></table>
   <table cellpadding="0" cellspacing="0" border="0" style="vertical-align:-webkit-baseline-middle;font-size:small;font-family:Verdana;line-height:1;"><tbody>
     ${(v.telefone || v.celular) ? `<tr style="vertical-align:middle;height:26px;">
-      <td width="16" height="16" style="width:16px;height:16px;vertical-align:middle;padding-right:4px;"><img src="${ICONS.phone}" alt="phone" width="16" height="16" style="display:block;width:16px;height:16px;min-width:16px;max-width:16px;"></td>
+      <td style="vertical-align:middle;padding-right:8px;"><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td width="16" height="16" style="width:16px;height:16px;padding:0;"><a style="display:block;padding:0;width:16px;height:16px;"><img src="${ICONS.phone}" alt="phone" width="16" height="16" style="display:block;width:16px;height:16px;min-width:16px;max-width:16px;"></a></td></tr></tbody></table></td>
       <td style="padding:0px;color:rgb(55,26,20);font-size:12px;">${v.telefone ? `<a href="tel:${v.telefone}" style="text-decoration:none;color:rgb(55,26,20);font-size:12px;"><span>${v.telefone}</span></a>` : ''}${v.telefone && v.celular ? `<span style="color:rgb(55,26,20);"> | </span>` : ''}${v.celular ? `<a href="tel:${v.celular}" style="text-decoration:none;color:rgb(55,26,20);font-size:12px;"><span>${v.celular}</span></a>` : ''}</td>
     </tr>` : ''}
     ${v.email ? `<tr style="vertical-align:middle;height:26px;">
-      <td width="16" height="16" style="width:16px;height:16px;vertical-align:middle;padding-right:4px;"><img src="${ICONS.email}" alt="email" width="16" height="16" style="display:block;width:16px;height:16px;min-width:16px;max-width:16px;"></td>
+      <td style="vertical-align:middle;padding-right:8px;"><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td width="16" height="16" style="width:16px;height:16px;padding:0;"><a style="display:block;padding:0;width:16px;height:16px;"><img src="${ICONS.email}" alt="email" width="16" height="16" style="display:block;width:16px;height:16px;min-width:16px;max-width:16px;"></a></td></tr></tbody></table></td>
       <td style="padding:0px;color:rgb(55,26,20);"><a href="mailto:${v.email}" style="text-decoration:none;color:rgb(55,26,20);font-size:12px;"><span>${v.email}</span></a></td>
     </tr>` : ''}
     ${v.site ? `<tr style="vertical-align:middle;height:26px;">
-      <td width="16" height="16" style="width:16px;height:16px;vertical-align:middle;padding-right:4px;"><img src="${ICONS.website}" alt="website" width="16" height="16" style="display:block;width:16px;height:16px;min-width:16px;max-width:16px;"></td>
+      <td style="vertical-align:middle;padding-right:8px;"><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td width="16" height="16" style="width:16px;height:16px;padding:0;"><a style="display:block;padding:0;width:16px;height:16px;"><img src="${ICONS.website}" alt="website" width="16" height="16" style="display:block;width:16px;height:16px;min-width:16px;max-width:16px;"></a></td></tr></tbody></table></td>
       <td style="padding:0px;color:rgb(55,26,20);"><a href="${siteHref}" style="text-decoration:none;color:rgb(55,26,20);font-size:12px;"><span>${v.site}</span></a></td>
     </tr>` : ''}
     ${v.endereco ? `<tr style="vertical-align:middle;height:26px;">
-      <td width="16" height="16" style="width:16px;height:16px;vertical-align:middle;padding-right:4px;"><img src="${ICONS.address}" alt="address" width="16" height="16" style="display:block;width:16px;height:16px;min-width:16px;max-width:16px;"></td>
+      <td style="vertical-align:middle;padding-right:8px;"><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td width="16" height="16" style="width:16px;height:16px;padding:0;"><a style="display:block;padding:0;width:16px;height:16px;"><img src="${ICONS.address}" alt="address" width="16" height="16" style="display:block;width:16px;height:16px;min-width:16px;max-width:16px;"></a></td></tr></tbody></table></td>
       <td style="padding:0px;color:rgb(55,26,20);"><span style="font-size:12px;color:rgb(55,26,20);">${v.endereco}</span></td>
     </tr>` : ''}
   </tbody></table>
