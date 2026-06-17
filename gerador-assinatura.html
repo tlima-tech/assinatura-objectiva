@@ -403,21 +403,21 @@ function buildSignature(v) {
 
   return `<table cellpadding="0" cellspacing="0" border="0" style="vertical-align:-webkit-baseline-middle;font-size:small;font-family:Verdana;"><tbody><tr><td><table cellpadding="0" cellspacing="0" border="0" style="vertical-align:-webkit-baseline-middle;font-size:small;font-family:Verdana;"><tbody><tr>
 
-<td style="vertical-align:top;">
-  <table cellpadding="0" cellspacing="0" border="0" style="vertical-align:-webkit-baseline-middle;font-size:small;font-family:Verdana;">
+<td width="130" style="vertical-align:top;width:130px;">
+  <table cellpadding="0" cellspacing="0" border="0" width="130" style="width:130px;vertical-align:-webkit-baseline-middle;font-size:small;font-family:Verdana;">
     <tbody>
       <tr>
-        <td style="text-align:center;">
-          <img src="https://tlima-tech.github.io/assinatura-objectiva/logo.gif" role="presentation" width="130" style="max-width:128px;display:block;">
+        <td width="130" style="text-align:center;width:130px;">
+          <img src="https://tlima-tech.github.io/assinatura-objectiva/logo.gif" role="presentation" width="130" style="max-width:130px;width:130px;display:block;">
         </td>
       </tr>
       <tr><td height="24"></td></tr>
       <tr>
-        <td style="text-align:center;">
+        <td width="130" style="text-align:center;width:130px;">
           <table cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;"><tbody><tr>
-            ${v.linkedin ? `<td style="padding:0 3px 0 0;"><a href="${v.linkedin}" style="display:block;padding:0;border-radius:50%;"><img src="${ICONS.linkedin}" alt="linkedin" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a></td>` : ''}
-            ${v.instagram ? `<td style="padding:0 3px;"><a href="${v.instagram}" style="display:block;padding:0;border-radius:50%;"><img src="${ICONS.instagram}" alt="instagram" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a></td>` : ''}
-            ${waLink ? `<td style="padding:0 0 0 3px;"><a href="${waLink}" style="display:block;padding:0;border-radius:50%;"><img src="${ICONS.whatsapp}" alt="whatsapp" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a></td>` : ''}
+            ${v.linkedin ? `<td width="24" height="24" style="width:24px;height:24px;padding:0 3px 0 0;"><a href="${v.linkedin}" style="display:block;padding:0;"><img src="${ICONS.linkedin}" alt="linkedin" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a></td>` : ''}
+            ${v.instagram ? `<td width="24" height="24" style="width:24px;height:24px;padding:0 3px;"><a href="${v.instagram}" style="display:block;padding:0;"><img src="${ICONS.instagram}" alt="instagram" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a></td>` : ''}
+            ${waLink ? `<td width="24" height="24" style="width:24px;height:24px;padding:0 0 0 3px;"><a href="${waLink}" style="display:block;padding:0;"><img src="${ICONS.whatsapp}" alt="whatsapp" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a></td>` : ''}
           </tr></tbody></table>
         </td>
       </tr>
