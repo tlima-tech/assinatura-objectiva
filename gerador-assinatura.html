@@ -414,11 +414,11 @@ function buildSignature(v) {
       <tr><td height="24"></td></tr>
       <tr>
         <td style="text-align:center;">
-          <div>
-            ${v.linkedin ? `<a href="${v.linkedin}" style="display:inline-block;padding:0;border-radius:50%;"><img src="${ICONS.linkedin}" alt="linkedin" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a><span style="display:inline-block;width:5px;"></span>` : ''}
-            ${v.instagram ? `<a href="${v.instagram}" style="display:inline-block;padding:0;border-radius:50%;"><img src="${ICONS.instagram}" alt="instagram" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a><span style="display:inline-block;width:5px;"></span>` : ''}
-            ${waLink ? `<a href="${waLink}" style="display:inline-block;padding:0;border-radius:50%;"><img src="${ICONS.whatsapp}" alt="whatsapp" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a>` : ''}
-          </div>
+          <table cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;"><tbody><tr>
+            ${v.linkedin ? `<td style="padding:0 3px 0 0;"><a href="${v.linkedin}" style="display:block;padding:0;border-radius:50%;"><img src="${ICONS.linkedin}" alt="linkedin" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a></td>` : ''}
+            ${v.instagram ? `<td style="padding:0 3px;"><a href="${v.instagram}" style="display:block;padding:0;border-radius:50%;"><img src="${ICONS.instagram}" alt="instagram" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a></td>` : ''}
+            ${waLink ? `<td style="padding:0 0 0 3px;"><a href="${waLink}" style="display:block;padding:0;border-radius:50%;"><img src="${ICONS.whatsapp}" alt="whatsapp" width="24" height="24" style="display:block;width:24px;height:24px;min-width:24px;max-width:24px;border-radius:50%;"></a></td>` : ''}
+          </tr></tbody></table>
         </td>
       </tr>
     </tbody>
